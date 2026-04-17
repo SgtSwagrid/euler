@@ -20,8 +20,3 @@ class Grid(size: Pos, offset: Pos = Pos.zero):
       dir <- Pos.octagonal
       streak <- streaks(length, dir)
     yield streak
-
-  def pd_streaks(length: Int): Iterable[Seq[Pos]] =
-    Grid(size - Pos(length - 1, length - 1))
-      .positions
-      .map(start => (0 until length).map(i => Pos(start.x + i, start.y + i)))
