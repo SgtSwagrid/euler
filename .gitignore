@@ -15,21 +15,9 @@ hs_err_pid*
 .metals/
 metals.sbt
 
-# IntelliJ (share code style, dictionaries, templates, and plugins)
+# IDEs
 .idea/*
-!.idea/codeStyles/
-!.idea/dictionaries/
-!.idea/fileTemplates/
-!.idea/inspectionProfiles/
-!.idea/runConfigurations/
-!.idea/externalDependencies.xml
-!.idea/file.template.settings.xml
-!.idea/vcs.xml
-
-# VSCode (share workspace settings and extensions)
 .vscode/*
-!.vscode/settings.json
-!.vscode/extensions.json
 
 # Agents
 .claude/settings.local.json
