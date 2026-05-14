@@ -7,4 +7,4 @@ object Problem0014:
 
   @main
   def solution14(): Unit = println:
-    (1 until 999999).maxBy(Collatz.length)
+    (1 until 1000000).maxBy(Collatz.length)
