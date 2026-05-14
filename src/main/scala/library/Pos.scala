@@ -20,6 +20,8 @@ object Pos:
   def up: Pos = Pos(0, 1)
   def down: Pos = Pos(0, -1)
 
+  def vertical: Seq[Pos] = Seq(up, down)
+  def horizontal: Seq[Pos] = Seq(left, right)
   def orthogonal: Seq[Pos] = Seq(left, right, up, down)
   def diagonal: Seq[Pos] = Seq(Pos(1, 1), Pos(-1, -1), Pos(-1, 1), Pos(1, -1))
   def octagonal: Seq[Pos] = orthogonal ++ diagonal
